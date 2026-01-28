@@ -18,4 +18,6 @@ This directory contains the experiment data used for all tables, plots, and stat
 
 **Provenance:** Data produced by the Experiment Runner when running the experiment defined in **`4_experiment_execution/`** (Section 4). Run table and per-run directories correspond to `4_experiment_execution/experiment-runner/examples/mubench-benchmarking/experiments/mubench_phase3_benchmarking/`.
 
+**Omitted file (GitHub size limit):** One raw EnergiBridge file — `raw_runs/run_15_repetition_5/energibridge_output.csv` — exceeds GitHub’s 100 MB file limit and is not included in this repository. Its aggregated energy metrics are in `run_table.csv`. To obtain the raw file, re-run that run (run 15, repetition 5) using the instructions in [4_experiment_execution/HOW_TO_RUN_THE_EXPERIMENT.md](../4_experiment_execution/HOW_TO_RUN_THE_EXPERIMENT.md).
+
 **Analysis:** The scripts in **`5_results_analysis/`** (Section 5) use this data to produce the paper’s figures and tables. See [5_results_analysis/README.md](../5_results_analysis/README.md).

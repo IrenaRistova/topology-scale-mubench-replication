@@ -56,7 +56,7 @@ This directory contains everything needed to re-run the experiment: [Experiment 
 
 **Paper section:** Section 5 (Results and Analysis — data).
 
-Contains the experiment outputs: `run_table.csv` (aggregated metrics per run), `raw_runs/` (per-run Locust, Prometheus, and EnergiBridge outputs), and `RUN_TABLE_COLUMNS_EXPLANATION.md`.
+Contains the experiment outputs: `run_table.csv` (aggregated metrics per run), `raw_runs/` (per-run Locust, Prometheus, and EnergiBridge outputs), and `RUN_TABLE_COLUMNS_EXPLANATION.md`. One raw EnergiBridge file (`run_15_repetition_5/energibridge_output.csv`) exceeds GitHub’s 100 MB limit and is omitted from the repo; its aggregated values are in `run_table.csv`, and the raw file can be reproduced by re-running that configuration (see [4_experiment_execution/HOW_TO_RUN_THE_EXPERIMENT.md](4_experiment_execution/HOW_TO_RUN_THE_EXPERIMENT.md)).
 
 - **Documentation:** [5_results_data/README.md](5_results_data/README.md).
 
