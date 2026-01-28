@@ -1,0 +1,25 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*~
+
+# Experiment runner / local
+*.log
+
+# Oversized raw run files (GitHub limit 100 MB; omit from repo; run_table.csv has aggregated metrics)
+5_results_data/raw_runs/run_15_repetition_5/energibridge_output.csv

@@ -1,0 +1,23 @@
+{
+    "ServiceGraphParameters": {
+        "vertices": 50,
+        "power": 1.0,
+        "zero_appeal": 1.0,
+        "seq_len": 1,
+        "external_service_groups": 2,
+        "service_probability": {
+            "model": "const",
+            "params": {
+                "value": 0.8
+            }
+        },
+        "dbs": {
+            "mysql": 0.3,
+            "postgres": 0.3,
+            "mongodb": 0.2,
+            "nodb": 0.2
+        }
+    },
+    "OutputPath": "ServiceGraphGenerator/graphs",
+    "OutputFile": "servicegraph_large.json"
+} 

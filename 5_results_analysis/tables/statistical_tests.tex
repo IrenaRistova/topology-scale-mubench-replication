@@ -1,0 +1,139 @@
+\begin{table}[h]
+\centering
+\caption{Statistical Test Results for Performance and Energy Metrics}
+\label{tab:statistical_tests}
+\begin{tabular}{llrrr}
+\toprule
+metric & test & statistic & p\_value & significant \\
+\midrule
+Throughput & KW – Throughput (all topologies) & 52.641424 & 0.000000 & True \\
+Throughput & MWU (probabilistic\_tree vs parallel\_fanout) & 500.000000 & 0.464273 & False \\
+Throughput & MWU (probabilistic\_tree vs chain\_with\_branching) & 500.000000 & 0.464273 & False \\
+Throughput & MWU (probabilistic\_tree vs complex\_mesh) & 900.000000 & 0.000000 & True \\
+Throughput & MWU (probabilistic\_tree vs hierarchical\_tree) & 600.000000 & 0.027086 & True \\
+Throughput & MWU (probabilistic\_tree vs sequential\_fanout) & 600.000000 & 0.027086 & True \\
+Throughput & MWU (parallel\_fanout vs chain\_with\_branching) & 351.000000 & 0.145319 & False \\
+Throughput & MWU (parallel\_fanout vs complex\_mesh) & 700.000000 & 0.000225 & True \\
+Throughput & MWU (parallel\_fanout vs hierarchical\_tree) & 403.000000 & 0.491783 & False \\
+Throughput & MWU (parallel\_fanout vs sequential\_fanout) & 421.000000 & 0.673495 & False \\
+Throughput & MWU (chain\_with\_branching vs complex\_mesh) & 810.000000 & 0.000000 & True \\
+Throughput & MWU (chain\_with\_branching vs hierarchical\_tree) & 522.000000 & 0.290472 & False \\
+Throughput & MWU (chain\_with\_branching vs sequential\_fanout) & 600.000000 & 0.027086 & True \\
+Throughput & MWU (complex\_mesh vs hierarchical\_tree) & 60.000000 & 0.000000 & True \\
+Throughput & MWU (complex\_mesh vs sequential\_fanout) & 154.000000 & 0.000012 & True \\
+Throughput & MWU (hierarchical\_tree vs sequential\_fanout) & 566.000000 & 0.087710 & False \\
+Avg. Response Time & KW – Avg. Response Time (all topologies) & 52.549220 & 0.000000 & True \\
+Avg. Response Time & MWU (probabilistic\_tree vs parallel\_fanout) & 400.000000 & 0.464273 & False \\
+Avg. Response Time & MWU (probabilistic\_tree vs chain\_with\_branching) & 400.000000 & 0.464273 & False \\
+Avg. Response Time & MWU (probabilistic\_tree vs complex\_mesh) & 0.000000 & 0.000000 & True \\
+Avg. Response Time & MWU (probabilistic\_tree vs hierarchical\_tree) & 300.000000 & 0.027086 & True \\
+Avg. Response Time & MWU (probabilistic\_tree vs sequential\_fanout) & 300.000000 & 0.027086 & True \\
+Avg. Response Time & MWU (parallel\_fanout vs chain\_with\_branching) & 543.000000 & 0.171450 & False \\
+Avg. Response Time & MWU (parallel\_fanout vs complex\_mesh) & 200.000000 & 0.000225 & True \\
+Avg. Response Time & MWU (parallel\_fanout vs hierarchical\_tree) & 480.000000 & 0.662735 & False \\
+Avg. Response Time & MWU (parallel\_fanout vs sequential\_fanout) & 463.000000 & 0.853382 & False \\
+Avg. Response Time & MWU (chain\_with\_branching vs complex\_mesh) & 84.000000 & 0.000000 & True \\
+Avg. Response Time & MWU (chain\_with\_branching vs hierarchical\_tree) & 365.000000 & 0.211561 & False \\
+Avg. Response Time & MWU (chain\_with\_branching vs sequential\_fanout) & 300.000000 & 0.027086 & True \\
+Avg. Response Time & MWU (complex\_mesh vs hierarchical\_tree) & 837.000000 & 0.000000 & True \\
+Avg. Response Time & MWU (complex\_mesh vs sequential\_fanout) & 740.000000 & 0.000019 & True \\
+Avg. Response Time & MWU (hierarchical\_tree vs sequential\_fanout) & 335.000000 & 0.090490 & False \\
+95th Percentile RT & KW – 95th Percentile RT (all topologies) & 59.581536 & 0.000000 & True \\
+95th Percentile RT & MWU (probabilistic\_tree vs parallel\_fanout) & 277.500000 & 0.010806 & True \\
+95th Percentile RT & MWU (probabilistic\_tree vs chain\_with\_branching) & 500.000000 & 0.463333 & False \\
+95th Percentile RT & MWU (probabilistic\_tree vs complex\_mesh) & 0.000000 & 0.000000 & True \\
+95th Percentile RT & MWU (probabilistic\_tree vs hierarchical\_tree) & 500.000000 & 0.462940 & False \\
+95th Percentile RT & MWU (probabilistic\_tree vs sequential\_fanout) & 487.500000 & 0.582808 & False \\
+95th Percentile RT & MWU (parallel\_fanout vs chain\_with\_branching) & 600.000000 & 0.026874 & True \\
+95th Percentile RT & MWU (parallel\_fanout vs complex\_mesh) & 207.500000 & 0.000337 & True \\
+95th Percentile RT & MWU (parallel\_fanout vs hierarchical\_tree) & 591.000000 & 0.037288 & True \\
+95th Percentile RT & MWU (parallel\_fanout vs sequential\_fanout) & 552.500000 & 0.130075 & False \\
+95th Percentile RT & MWU (chain\_with\_branching vs complex\_mesh) & 95.000000 & 0.000000 & True \\
+95th Percentile RT & MWU (chain\_with\_branching vs hierarchical\_tree) & 507.000000 & 0.401430 & False \\
+95th Percentile RT & MWU (chain\_with\_branching vs sequential\_fanout) & 490.000000 & 0.557821 & False \\
+95th Percentile RT & MWU (complex\_mesh vs hierarchical\_tree) & 863.500000 & 0.000000 & True \\
+95th Percentile RT & MWU (complex\_mesh vs sequential\_fanout) & 860.000000 & 0.000000 & True \\
+95th Percentile RT & MWU (hierarchical\_tree vs sequential\_fanout) & 434.500000 & 0.822234 & False \\
+Failure Rate & KW – Failure Rate (all topologies) & 109.768299 & 0.000000 & True \\
+Failure Rate & MWU (probabilistic\_tree vs parallel\_fanout) & 402.000000 & 0.482005 & False \\
+Failure Rate & MWU (probabilistic\_tree vs chain\_with\_branching) & 44.000000 & 0.000000 & True \\
+Failure Rate & MWU (probabilistic\_tree vs complex\_mesh) & 4.000000 & 0.000000 & True \\
+Failure Rate & MWU (probabilistic\_tree vs hierarchical\_tree) & 206.000000 & 0.000318 & True \\
+Failure Rate & MWU (probabilistic\_tree vs sequential\_fanout) & 576.000000 & 0.063091 & False \\
+Failure Rate & MWU (parallel\_fanout vs chain\_with\_branching) & 150.000000 & 0.000009 & True \\
+Failure Rate & MWU (parallel\_fanout vs complex\_mesh) & 46.000000 & 0.000000 & True \\
+Failure Rate & MWU (parallel\_fanout vs hierarchical\_tree) & 354.000000 & 0.157490 & False \\
+Failure Rate & MWU (parallel\_fanout vs sequential\_fanout) & 608.000000 & 0.018503 & True \\
+Failure Rate & MWU (chain\_with\_branching vs complex\_mesh) & 172.000000 & 0.000041 & True \\
+Failure Rate & MWU (chain\_with\_branching vs hierarchical\_tree) & 726.000000 & 0.000046 & True \\
+Failure Rate & MWU (chain\_with\_branching vs sequential\_fanout) & 899.000000 & 0.000000 & True \\
+Failure Rate & MWU (complex\_mesh vs hierarchical\_tree) & 844.000000 & 0.000000 & True \\
+Failure Rate & MWU (complex\_mesh vs sequential\_fanout) & 900.000000 & 0.000000 & True \\
+Failure Rate & MWU (hierarchical\_tree vs sequential\_fanout) & 792.000000 & 0.000000 & True \\
+CPU Usage & KW – CPU Usage (all topologies) & 39.670595 & 0.000000 & True \\
+CPU Usage & MWU (probabilistic\_tree vs parallel\_fanout) & 291.000000 & 0.019112 & True \\
+CPU Usage & MWU (probabilistic\_tree vs chain\_with\_branching) & 200.000000 & 0.000225 & True \\
+CPU Usage & MWU (probabilistic\_tree vs complex\_mesh) & 615.000000 & 0.015014 & True \\
+CPU Usage & MWU (probabilistic\_tree vs hierarchical\_tree) & 200.000000 & 0.000225 & True \\
+CPU Usage & MWU (probabilistic\_tree vs sequential\_fanout) & 200.000000 & 0.000225 & True \\
+CPU Usage & MWU (parallel\_fanout vs chain\_with\_branching) & 365.000000 & 0.211561 & False \\
+CPU Usage & MWU (parallel\_fanout vs complex\_mesh) & 662.000000 & 0.001767 & True \\
+CPU Usage & MWU (parallel\_fanout vs hierarchical\_tree) & 500.000000 & 0.464273 & False \\
+CPU Usage & MWU (parallel\_fanout vs sequential\_fanout) & 500.000000 & 0.464273 & False \\
+CPU Usage & MWU (chain\_with\_branching vs complex\_mesh) & 742.000000 & 0.000016 & True \\
+CPU Usage & MWU (chain\_with\_branching vs hierarchical\_tree) & 536.000000 & 0.206205 & False \\
+CPU Usage & MWU (chain\_with\_branching vs sequential\_fanout) & 600.000000 & 0.027086 & True \\
+CPU Usage & MWU (complex\_mesh vs hierarchical\_tree) & 147.000000 & 0.000008 & True \\
+CPU Usage & MWU (complex\_mesh vs sequential\_fanout) & 200.000000 & 0.000225 & True \\
+CPU Usage & MWU (hierarchical\_tree vs sequential\_fanout) & 521.000000 & 0.297272 & False \\
+Memory Usage & KW – Memory Usage (all topologies) & 112.358576 & 0.000000 & True \\
+Memory Usage & MWU (probabilistic\_tree vs parallel\_fanout) & 0.000000 & 0.000000 & True \\
+Memory Usage & MWU (probabilistic\_tree vs chain\_with\_branching) & 0.000000 & 0.000000 & True \\
+Memory Usage & MWU (probabilistic\_tree vs complex\_mesh) & 107.000000 & 0.000000 & True \\
+Memory Usage & MWU (probabilistic\_tree vs hierarchical\_tree) & 192.000000 & 0.000141 & True \\
+Memory Usage & MWU (probabilistic\_tree vs sequential\_fanout) & 300.000000 & 0.027086 & True \\
+Memory Usage & MWU (parallel\_fanout vs chain\_with\_branching) & 549.000000 & 0.145319 & False \\
+Memory Usage & MWU (parallel\_fanout vs complex\_mesh) & 900.000000 & 0.000000 & True \\
+Memory Usage & MWU (parallel\_fanout vs hierarchical\_tree) & 825.000000 & 0.000000 & True \\
+Memory Usage & MWU (parallel\_fanout vs sequential\_fanout) & 834.000000 & 0.000000 & True \\
+Memory Usage & MWU (chain\_with\_branching vs complex\_mesh) & 900.000000 & 0.000000 & True \\
+Memory Usage & MWU (chain\_with\_branching vs hierarchical\_tree) & 800.000000 & 0.000000 & True \\
+Memory Usage & MWU (chain\_with\_branching vs sequential\_fanout) & 804.000000 & 0.000000 & True \\
+Memory Usage & MWU (complex\_mesh vs hierarchical\_tree) & 304.000000 & 0.031466 & True \\
+Memory Usage & MWU (complex\_mesh vs sequential\_fanout) & 499.000000 & 0.473347 & False \\
+Memory Usage & MWU (hierarchical\_tree vs sequential\_fanout) & 595.000000 & 0.032651 & True \\
+Energy Consumption & KW – Energy Consumption (all topologies) & 19.580970 & 0.001497 & True \\
+Energy Consumption & MWU (probabilistic\_tree vs parallel\_fanout) & 300.000000 & 0.027086 & True \\
+Energy Consumption & MWU (probabilistic\_tree vs chain\_with\_branching) & 200.000000 & 0.000225 & True \\
+Energy Consumption & MWU (probabilistic\_tree vs complex\_mesh) & 402.000000 & 0.482517 & False \\
+Energy Consumption & MWU (probabilistic\_tree vs hierarchical\_tree) & 276.000000 & 0.010315 & True \\
+Energy Consumption & MWU (probabilistic\_tree vs sequential\_fanout) & 300.000000 & 0.027086 & True \\
+Energy Consumption & MWU (parallel\_fanout vs chain\_with\_branching) & 253.000000 & 0.003671 & True \\
+Energy Consumption & MWU (parallel\_fanout vs complex\_mesh) & 591.000000 & 0.037782 & True \\
+Energy Consumption & MWU (parallel\_fanout vs hierarchical\_tree) & 406.000000 & 0.520145 & False \\
+Energy Consumption & MWU (parallel\_fanout vs sequential\_fanout) & 411.000000 & 0.569220 & False \\
+Energy Consumption & MWU (chain\_with\_branching vs complex\_mesh) & 619.000000 & 0.012732 & True \\
+Energy Consumption & MWU (chain\_with\_branching vs hierarchical\_tree) & 525.000000 & 0.270705 & False \\
+Energy Consumption & MWU (chain\_with\_branching vs sequential\_fanout) & 599.000000 & 0.028129 & True \\
+Energy Consumption & MWU (complex\_mesh vs hierarchical\_tree) & 354.000000 & 0.157976 & False \\
+Energy Consumption & MWU (complex\_mesh vs sequential\_fanout) & 400.000000 & 0.464273 & False \\
+Energy Consumption & MWU (hierarchical\_tree vs sequential\_fanout) & 566.000000 & 0.087710 & False \\
+DRAM Energy Consumption & KW – DRAM Energy (all topologies) & 28.670080 & 0.000027 & True \\
+DRAM Energy Consumption & MWU (probabilistic\_tree vs parallel\_fanout) & 224.000000 & 0.000856 & True \\
+DRAM Energy Consumption & MWU (probabilistic\_tree vs chain\_with\_branching) & 203.000000 & 0.000268 & True \\
+DRAM Energy Consumption & MWU (probabilistic\_tree vs complex\_mesh) & 461.000000 & 0.876635 & False \\
+DRAM Energy Consumption & MWU (probabilistic\_tree vs hierarchical\_tree) & 267.000000 & 0.006972 & True \\
+DRAM Energy Consumption & MWU (probabilistic\_tree vs sequential\_fanout) & 258.000000 & 0.004637 & True \\
+DRAM Energy Consumption & MWU (parallel\_fanout vs chain\_with\_branching) & 370.000000 & 0.239850 & False \\
+DRAM Energy Consumption & MWU (parallel\_fanout vs complex\_mesh) & 691.000000 & 0.000377 & True \\
+DRAM Energy Consumption & MWU (parallel\_fanout vs hierarchical\_tree) & 482.000000 & 0.641424 & False \\
+DRAM Energy Consumption & MWU (parallel\_fanout vs sequential\_fanout) & 403.000000 & 0.491783 & False \\
+DRAM Energy Consumption & MWU (chain\_with\_branching vs complex\_mesh) & 717.000000 & 0.000081 & True \\
+DRAM Energy Consumption & MWU (chain\_with\_branching vs hierarchical\_tree) & 537.000000 & 0.200949 & False \\
+DRAM Energy Consumption & MWU (chain\_with\_branching vs sequential\_fanout) & 438.000000 & 0.864994 & False \\
+DRAM Energy Consumption & MWU (complex\_mesh vs hierarchical\_tree) & 283.000000 & 0.013832 & True \\
+DRAM Energy Consumption & MWU (complex\_mesh vs sequential\_fanout) & 254.000000 & 0.003848 & True \\
+DRAM Energy Consumption & MWU (hierarchical\_tree vs sequential\_fanout) & 415.000000 & 0.610008 & False \\
+\bottomrule
+\end{tabular}
+\end{table}

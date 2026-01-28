@@ -1,0 +1,905 @@
+{
+  "s0": {
+    "external_services": [
+      {
+        "seq_len": 100,
+        "services": ["s1","s2","s3","s4","s5","s6","s7","s8","s9","s10","s11","s12","s13","s14","s15","s16","s17","s18","s19"]
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s0.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s1": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s1.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s2": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s2.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s3": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s3.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s4": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s4.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s5": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s5.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s6": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s6.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s7": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s7.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s8": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s8.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s9": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s9.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s10": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s10.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s11": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s11.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s12": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s12.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s13": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s13.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s14": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s14.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s15": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s15.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s16": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s16.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s17": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s17.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s18": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s18.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  },
+  "s19": {
+    "external_services": [
+      {
+        "seq_len": 1,
+        "services": []
+      }
+    ],
+    "internal_service": {
+      "loader": {
+        "cpu_stress": {
+          "run": true,
+          "range_complexity": [
+            100,
+            100
+          ],
+          "thread_pool_size": 1,
+          "trials": 5
+        },
+        "memory_stress": {
+          "run": false,
+          "memory_size": 10000,
+          "memory_io": 1000
+        },
+        "disk_stress": {
+          "run": false,
+          "tmp_file_name": "mubtestfile.txt",
+          "disk_write_block_count": 1000,
+          "disk_write_block_size": 1024
+        },
+        "sleep_stress": {
+          "run": false,
+          "sleep_time": 0.01
+        },
+        "mean_response_size": 100,
+        "function_id": "f1"
+      }
+    },
+    "request_method": "rest",
+    "workers": 4,
+    "threads": 16,
+    "url": "s19.default.svc.cluster.local",
+    "path": "/api/v1",
+    "image": "msvcbench/microservice_v6-screen:1.0",
+    "namespace": "default"
+  }
+}
+
+
+

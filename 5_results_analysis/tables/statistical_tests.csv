@@ -1,0 +1,129 @@
+metric,test,statistic,p_value,significant
+Throughput,KW – Throughput (all topologies),52.64142418661754,3.9845329680102676e-10,True
+Throughput,MWU (probabilistic_tree vs parallel_fanout),500.0,0.46427291062161524,False
+Throughput,MWU (probabilistic_tree vs chain_with_branching),500.0,0.46427291062161524,False
+Throughput,MWU (probabilistic_tree vs complex_mesh),900.0,3.019859359162157e-11,True
+Throughput,MWU (probabilistic_tree vs hierarchical_tree),600.0,0.027086318388295935,True
+Throughput,MWU (probabilistic_tree vs sequential_fanout),600.0,0.027086318388295935,True
+Throughput,MWU (parallel_fanout vs chain_with_branching),351.0,0.14531912724086543,False
+Throughput,MWU (parallel_fanout vs complex_mesh),700.0,0.00022539027899025688,True
+Throughput,MWU (parallel_fanout vs hierarchical_tree),403.0,0.491782956953405,False
+Throughput,MWU (parallel_fanout vs sequential_fanout),421.0,0.673495052801603,False
+Throughput,MWU (chain_with_branching vs complex_mesh),810.0,1.0665677738596446e-07,True
+Throughput,MWU (chain_with_branching vs hierarchical_tree),522.0,0.2904721494938346,False
+Throughput,MWU (chain_with_branching vs sequential_fanout),600.0,0.027086318388295935,True
+Throughput,MWU (complex_mesh vs hierarchical_tree),60.0,8.48477290014798e-09,True
+Throughput,MWU (complex_mesh vs sequential_fanout),154.0,1.2493242098147689e-05,True
+Throughput,MWU (hierarchical_tree vs sequential_fanout),566.0,0.08771037748098136,False
+Avg. Response Time,KW – Avg. Response Time (all topologies),52.54922038060147,4.1619777910858763e-10,True
+Avg. Response Time,MWU (probabilistic_tree vs parallel_fanout),400.0,0.46427291062161524,False
+Avg. Response Time,MWU (probabilistic_tree vs chain_with_branching),400.0,0.46427291062161524,False
+Avg. Response Time,MWU (probabilistic_tree vs complex_mesh),0.0,3.019859359162157e-11,True
+Avg. Response Time,MWU (probabilistic_tree vs hierarchical_tree),300.0,0.027086318388295935,True
+Avg. Response Time,MWU (probabilistic_tree vs sequential_fanout),300.0,0.027086318388295935,True
+Avg. Response Time,MWU (parallel_fanout vs chain_with_branching),543.0,0.17145004745971015,False
+Avg. Response Time,MWU (parallel_fanout vs complex_mesh),200.0,0.00022539027899025688,True
+Avg. Response Time,MWU (parallel_fanout vs hierarchical_tree),480.0,0.662734758176107,False
+Avg. Response Time,MWU (parallel_fanout vs sequential_fanout),463.0,0.8533817367547931,False
+Avg. Response Time,MWU (chain_with_branching vs complex_mesh),84.0,6.527736457495676e-08,True
+Avg. Response Time,MWU (chain_with_branching vs hierarchical_tree),365.0,0.21156123692597317,False
+Avg. Response Time,MWU (chain_with_branching vs sequential_fanout),300.0,0.027086318388295935,True
+Avg. Response Time,MWU (complex_mesh vs hierarchical_tree),837.0,1.1023399461097623e-08,True
+Avg. Response Time,MWU (complex_mesh vs sequential_fanout),740.0,1.8681677770528113e-05,True
+Avg. Response Time,MWU (hierarchical_tree vs sequential_fanout),335.0,0.090490360906144,False
+95th Percentile RT,KW – 95th Percentile RT (all topologies),59.58153631577941,1.4831953171433378e-11,True
+95th Percentile RT,MWU (probabilistic_tree vs parallel_fanout),277.5,0.010805933396510745,True
+95th Percentile RT,MWU (probabilistic_tree vs chain_with_branching),500.0,0.4633333154163233,False
+95th Percentile RT,MWU (probabilistic_tree vs complex_mesh),0.0,2.7046566795229522e-11,True
+95th Percentile RT,MWU (probabilistic_tree vs hierarchical_tree),500.0,0.4629398566535585,False
+95th Percentile RT,MWU (probabilistic_tree vs sequential_fanout),487.5,0.5828083616963808,False
+95th Percentile RT,MWU (parallel_fanout vs chain_with_branching),600.0,0.02687361529555694,True
+95th Percentile RT,MWU (parallel_fanout vs complex_mesh),207.5,0.00033700051443586316,True
+95th Percentile RT,MWU (parallel_fanout vs hierarchical_tree),591.0,0.037287672939026434,True
+95th Percentile RT,MWU (parallel_fanout vs sequential_fanout),552.5,0.13007505358385782,False
+95th Percentile RT,MWU (chain_with_branching vs complex_mesh),95.0,1.444861035717282e-07,True
+95th Percentile RT,MWU (chain_with_branching vs hierarchical_tree),507.0,0.4014298547158007,False
+95th Percentile RT,MWU (chain_with_branching vs sequential_fanout),490.0,0.5578210041613537,False
+95th Percentile RT,MWU (complex_mesh vs hierarchical_tree),863.5,7.13016494992205e-10,True
+95th Percentile RT,MWU (complex_mesh vs sequential_fanout),860.0,1.0647741542125779e-09,True
+95th Percentile RT,MWU (hierarchical_tree vs sequential_fanout),434.5,0.8222341425420513,False
+Failure Rate,KW – Failure Rate (all topologies),109.76829888290968,4.586330681620216e-22,True
+Failure Rate,MWU (probabilistic_tree vs parallel_fanout),402.0,0.4820051624413533,False
+Failure Rate,MWU (probabilistic_tree vs chain_with_branching),44.0,2.0337965170597153e-09,True
+Failure Rate,MWU (probabilistic_tree vs complex_mesh),4.0,4.504322112705282e-11,True
+Failure Rate,MWU (probabilistic_tree vs hierarchical_tree),206.0,0.0003182078923228715,True
+Failure Rate,MWU (probabilistic_tree vs sequential_fanout),576.0,0.06309145847208203,False
+Failure Rate,MWU (parallel_fanout vs chain_with_branching),150.0,9.288265489024006e-06,True
+Failure Rate,MWU (parallel_fanout vs complex_mesh),46.0,2.336600906073119e-09,True
+Failure Rate,MWU (parallel_fanout vs hierarchical_tree),354.0,0.15749019077353776,False
+Failure Rate,MWU (parallel_fanout vs sequential_fanout),608.0,0.018502673273871326,True
+Failure Rate,MWU (chain_with_branching vs complex_mesh),172.0,4.0839534518280284e-05,True
+Failure Rate,MWU (chain_with_branching vs hierarchical_tree),726.0,4.638965975341988e-05,True
+Failure Rate,MWU (chain_with_branching vs sequential_fanout),899.0,3.0967145286270366e-11,True
+Failure Rate,MWU (complex_mesh vs hierarchical_tree),844.0,5.967306094734087e-09,True
+Failure Rate,MWU (complex_mesh vs sequential_fanout),900.0,2.8003238673915385e-11,True
+Failure Rate,MWU (hierarchical_tree vs sequential_fanout),792.0,4.25190487315072e-07,True
+CPU Usage,KW – CPU Usage (all topologies),39.670595457335935,1.7400929740166763e-07,True
+CPU Usage,MWU (probabilistic_tree vs parallel_fanout),291.0,0.01911239675982854,True
+CPU Usage,MWU (probabilistic_tree vs chain_with_branching),200.0,0.00022539027899025688,True
+CPU Usage,MWU (probabilistic_tree vs complex_mesh),615.0,0.015014132798189755,True
+CPU Usage,MWU (probabilistic_tree vs hierarchical_tree),200.0,0.00022539027899025688,True
+CPU Usage,MWU (probabilistic_tree vs sequential_fanout),200.0,0.00022539027899025688,True
+CPU Usage,MWU (parallel_fanout vs chain_with_branching),365.0,0.21156123692597317,False
+CPU Usage,MWU (parallel_fanout vs complex_mesh),662.0,0.0017665641434145185,True
+CPU Usage,MWU (parallel_fanout vs hierarchical_tree),500.0,0.46427291062161524,False
+CPU Usage,MWU (parallel_fanout vs sequential_fanout),500.0,0.46427291062161524,False
+CPU Usage,MWU (chain_with_branching vs complex_mesh),742.0,1.6350572081705153e-05,True
+CPU Usage,MWU (chain_with_branching vs hierarchical_tree),536.0,0.20620548705301323,False
+CPU Usage,MWU (chain_with_branching vs sequential_fanout),600.0,0.027086318388295935,True
+CPU Usage,MWU (complex_mesh vs hierarchical_tree),147.0,7.738685688576608e-06,True
+CPU Usage,MWU (complex_mesh vs sequential_fanout),200.0,0.00022539027899025688,True
+CPU Usage,MWU (hierarchical_tree vs sequential_fanout),521.0,0.2972716890893069,False
+Memory Usage,KW – Memory Usage (all topologies),112.35857581338246,1.2999202414707924e-22,True
+Memory Usage,MWU (probabilistic_tree vs parallel_fanout),0.0,3.019859359162157e-11,True
+Memory Usage,MWU (probabilistic_tree vs chain_with_branching),0.0,3.019859359162157e-11,True
+Memory Usage,MWU (probabilistic_tree vs complex_mesh),107.0,4.1127057365406515e-07,True
+Memory Usage,MWU (probabilistic_tree vs hierarchical_tree),192.0,0.00014066868942295472,True
+Memory Usage,MWU (probabilistic_tree vs sequential_fanout),300.0,0.027086318388295935,True
+Memory Usage,MWU (parallel_fanout vs chain_with_branching),549.0,0.14531912724086543,False
+Memory Usage,MWU (parallel_fanout vs complex_mesh),900.0,3.019859359162157e-11,True
+Memory Usage,MWU (parallel_fanout vs hierarchical_tree),825.0,3.0810543518021204e-08,True
+Memory Usage,MWU (parallel_fanout vs sequential_fanout),834.0,1.4294165868692731e-08,True
+Memory Usage,MWU (chain_with_branching vs complex_mesh),900.0,3.019859359162157e-11,True
+Memory Usage,MWU (chain_with_branching vs hierarchical_tree),800.0,2.3768200504545059e-07,True
+Memory Usage,MWU (chain_with_branching vs sequential_fanout),804.0,1.7294093690511436e-07,True
+Memory Usage,MWU (complex_mesh vs hierarchical_tree),304.0,0.03146563257725609,True
+Memory Usage,MWU (complex_mesh vs sequential_fanout),499.0,0.47334655725844954,False
+Memory Usage,MWU (hierarchical_tree vs sequential_fanout),595.0,0.03265093917842125,True
+Energy Consumption,KW – Energy Consumption (all topologies),19.580969920196367,0.001497375177064782,True
+Energy Consumption,MWU (probabilistic_tree vs parallel_fanout),300.0,0.027086318388295935,True
+Energy Consumption,MWU (probabilistic_tree vs chain_with_branching),200.0,0.00022539027899025688,True
+Energy Consumption,MWU (probabilistic_tree vs complex_mesh),402.0,0.4825169043645008,False
+Energy Consumption,MWU (probabilistic_tree vs hierarchical_tree),276.0,0.010314672402337998,True
+Energy Consumption,MWU (probabilistic_tree vs sequential_fanout),300.0,0.027086318388295935,True
+Energy Consumption,MWU (parallel_fanout vs chain_with_branching),253.0,0.003670893392450653,True
+Energy Consumption,MWU (parallel_fanout vs complex_mesh),591.0,0.03778201789416722,True
+Energy Consumption,MWU (parallel_fanout vs hierarchical_tree),406.0,0.5201446121616038,False
+Energy Consumption,MWU (parallel_fanout vs sequential_fanout),411.0,0.5692201637415295,False
+Energy Consumption,MWU (chain_with_branching vs complex_mesh),619.0,0.012732114616306573,True
+Energy Consumption,MWU (chain_with_branching vs hierarchical_tree),525.0,0.2707053377245183,False
+Energy Consumption,MWU (chain_with_branching vs sequential_fanout),599.0,0.02812866989728732,True
+Energy Consumption,MWU (complex_mesh vs hierarchical_tree),354.0,0.1579756891505133,False
+Energy Consumption,MWU (complex_mesh vs sequential_fanout),400.0,0.46427291062161524,False
+Energy Consumption,MWU (hierarchical_tree vs sequential_fanout),566.0,0.08771037748098136,False
+DRAM Energy Consumption,KW – DRAM Energy (all topologies),28.670079803560384,2.691168161139935e-05,True
+DRAM Energy Consumption,MWU (probabilistic_tree vs parallel_fanout),224.0,0.000856411554987191,True
+DRAM Energy Consumption,MWU (probabilistic_tree vs chain_with_branching),203.0,0.0002680570968049172,True
+DRAM Energy Consumption,MWU (probabilistic_tree vs complex_mesh),461.0,0.8766349003139949,False
+DRAM Energy Consumption,MWU (probabilistic_tree vs hierarchical_tree),267.0,0.006972441494570254,True
+DRAM Energy Consumption,MWU (probabilistic_tree vs sequential_fanout),258.0,0.004637118106215593,True
+DRAM Energy Consumption,MWU (parallel_fanout vs chain_with_branching),370.0,0.23984999119107964,False
+DRAM Energy Consumption,MWU (parallel_fanout vs complex_mesh),691.0,0.0003770395640831686,True
+DRAM Energy Consumption,MWU (parallel_fanout vs hierarchical_tree),482.0,0.641423522520332,False
+DRAM Energy Consumption,MWU (parallel_fanout vs sequential_fanout),403.0,0.491782956953405,False
+DRAM Energy Consumption,MWU (chain_with_branching vs complex_mesh),717.0,8.146484074606887e-05,True
+DRAM Energy Consumption,MWU (chain_with_branching vs hierarchical_tree),537.0,0.20094889697592833,False
+DRAM Energy Consumption,MWU (chain_with_branching vs sequential_fanout),438.0,0.8649937061644875,False
+DRAM Energy Consumption,MWU (complex_mesh vs hierarchical_tree),283.0,0.013831619802975413,True
+DRAM Energy Consumption,MWU (complex_mesh vs sequential_fanout),254.0,0.003848067983551401,True
+DRAM Energy Consumption,MWU (hierarchical_tree vs sequential_fanout),415.0,0.6100075520376812,False
