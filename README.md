@@ -27,7 +27,7 @@ If this replication package is helping your research, consider citing it as foll
 
 ---
 
-## Section 3: Experiment Planning (no separate folder)
+## Section 3: Experiment Planning 
 
 The material that corresponds to **Section 3** of the paper (experiment planning: topologies, workmodels, service graphs) is contained in **`4_experiment_execution/`**:
 
