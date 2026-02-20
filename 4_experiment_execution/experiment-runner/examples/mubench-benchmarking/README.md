@@ -2,7 +2,7 @@
 
 This folder contains the **experiment definition** used for the topology–scale muBench study: `RunnerConfig.py`. It defines the run table, workflow hooks, and integration with muBench, Locust, Prometheus, and EnergiBridge.
 
-**Full experiment flow:** **`EXPERIMENT_ARCHITECTURE.md`** in this folder describes the complete experiment flow, architecture, and per-run workflow (hooks, components, data layout). It matches the behaviour implemented in `RunnerConfig.py`. The diagram `expflow.pdf` is in **`5_results_analysis/figures/`** at the package root.
+**Full experiment flow:** **`EXPERIMENT_ARCHITECTURE.md`** in this folder describes the complete experiment flow, architecture, and per-run workflow (hooks, components, data layout). It matches the behaviour implemented in `RunnerConfig.py`. The diagram is in **`5_results_analysis/figures/figure1_experiment_execution.pdf`** (paper Figure 1) at the package root.
 
 **In this replication package:** The **data from when this experiment was run** (run table and raw per-run files) is provided at the package root under **`5_results_data/`**. Tables and figures for the paper are produced by **`5_results_analysis/`** (Section 5) using that data. This folder holds only the experiment logic, not the results.
 

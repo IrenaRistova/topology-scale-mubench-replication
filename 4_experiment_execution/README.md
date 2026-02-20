@@ -80,6 +80,6 @@ On the **server**, you need a matching environment (same scripts and workmodels)
 - **Experiment design, factors, workflow:**  
   `experiment-runner/examples/mubench-benchmarking/README.md` and **`EXPERIMENT_ARCHITECTURE.md`** in that folder.
 - **Diagram of the experiment flow:**  
-  `5_results_analysis/figures/expflow.pdf` (at the replication package root).
+  `5_results_analysis/figures/figure1_experiment_execution.pdf` (at the replication package root).
 - **Run commands, tunnels, cleanup:**  
   [HOW_TO_RUN_THE_EXPERIMENT.md](HOW_TO_RUN_THE_EXPERIMENT.md).

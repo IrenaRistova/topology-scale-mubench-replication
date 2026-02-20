@@ -1,6 +1,6 @@
 # muBench Benchmarking Experiment Architecture
 
-This document describes the **full experiment flow and architecture**. It matches the behaviour implemented in `RunnerConfig.py` in this folder. The diagram `expflow.pdf` in the replication package (`5_results_analysis/figures/`) is a visual counterpart.
+This document describes the **full experiment flow and architecture**. It matches the behaviour implemented in `RunnerConfig.py` in this folder. The diagram in the replication package (`5_results_analysis/figures/figure1_experiment_execution.pdf`, paper Figure 1) is a visual counterpart.
 
 ## Overview
 
