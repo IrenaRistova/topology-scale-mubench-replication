@@ -85,10 +85,12 @@ These metrics are collected from Locust's CSV output (`results_stats.csv`) after
 These metrics are collected by querying Prometheus (running on the server) via SSH tunnel after the measurement phase ends.
 
 #### `cpu_usage_avg`
-- **Description**: Average CPU usage across all pods in the namespace
+- **Description**: Average CPU usage across all pods in the namespace (during the measurement window).
 - **Source**: Prometheus query - `rate(container_cpu_usage_seconds_total{namespace="..."}[5m])`
-- **Unit**: CPU cores (fractional, e.g., 0.001 = 0.1% of one core)
+- **Unit**: **CPU cores** (absolute). Value is the average number of cores utilized (e.g. 1.8 = 1.8 cores). Not a percentage. The experiment Minikube cluster is configured with **28 vCPUs** per node, with 4 reserved for the kubelet, so **24 cores are allocatable** to workloads (`muBench/scripts/setup-infrastructure.sh`). Thus 1.8 cores ≈ 1.8/24 ≈ 7.5% of allocatable CPU.
 - **Collection**: Query Prometheus API via SSH tunnel; result written to `{run_dir}/prometheus_cpu.txt`
+
+**Why is CPU utilization so low (~1–2 cores, ~7–8% of allocatable)?** (1) **Throughput is modest** — observed throughput is ~6–17 RPS; total CPU work per second is limited by how many requests complete. (2) **Small CPU work per request** — each request runs the internal “loader” with CPU stress: pi to 100 digits × 20 trials, single-thread (`range_complexity` [100,100], `trials` 20 in the workmodels). So each request burns only a modest amount of CPU. (3) **Request time is mostly non-CPU** — average latency is ~4–13 s; most of that is network, serialization, and dependency calls along the topology, not raw compute. (4) **Load is fixed** — Locust runs with 100 users and 10 min duration; the bottleneck is end-to-end latency and throughput, not saturation of the 24 allocatable cores. So low CPU is expected for this workload and is consistent with a latency- and throughput-bound regime rather than a CPU-bound one.
 
 #### `memory_usage_avg`
 - **Description**: Average memory usage across all pods in the namespace
