@@ -20,4 +20,4 @@ This directory contains the experiment data used for all tables, plots, and stat
 
 **Omitted file (GitHub size limit):** One raw EnergiBridge file — `raw_runs/run_15_repetition_5/energibridge_output.csv` — exceeds GitHub’s 100 MB file limit and is not included in this repository. Its aggregated energy metrics are in `run_table.csv`. To obtain the raw file, re-run that run (run 15, repetition 5) using the instructions in [4_experiment_execution/HOW_TO_RUN_THE_EXPERIMENT.md](../4_experiment_execution/HOW_TO_RUN_THE_EXPERIMENT.md).
 
-**Analysis:** The scripts in **`5_results_analysis/`** (Section 5) use this data to produce the paper’s figures and tables. See [5_results_analysis/README.md](../5_results_analysis/README.md).
+**Analysis:** The Jupyter notebooks in **`5_results_analysis/`** (Section 5) use this data to produce the paper’s figures and tables. See [5_results_analysis/README.md](../5_results_analysis/README.md).

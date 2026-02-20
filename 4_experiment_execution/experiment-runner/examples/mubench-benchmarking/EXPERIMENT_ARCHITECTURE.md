@@ -350,4 +350,4 @@ The final **`5_results_data/run_table.csv`** contains 180 rows (one per run) wit
 - Energy: energy, dram_energy, cpu_usage_eb_avg, cpu_freq_avg, memory_used_avg, memory_total
 - System: cpu_usage_avg, memory_usage_avg
 
-This dataset is used by **`5_results_analysis/make_results.py`** to produce the paper’s tables and figures.
+This dataset is used by the **Jupyter notebooks in `5_results_analysis/notebooks/`** to produce the paper’s tables and figures.

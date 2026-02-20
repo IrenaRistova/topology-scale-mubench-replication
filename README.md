@@ -4,7 +4,7 @@ This repository supports replication of the study on topology and scale effects 
 
 - **Section 3: Experiment Planning** — Topology definitions, workmodels, and service-graph choices. These are **not** in a separate directory; they are documented below and live inside **`4_experiment_execution/`**.
 - **Section 4: Experiment Execution** — **`4_experiment_execution/`**
-- **Section 5: Results and Analysis** — **`5_results_data/`** (data) and **`5_results_analysis/`** (scripts and outputs)
+- **Section 5: Results and Analysis** — **`5_results_data/`** (data) and **`5_results_analysis/`** (notebooks and outputs)
 
 ---
 
@@ -60,11 +60,11 @@ Contains the experiment outputs: `run_table.csv` (aggregated metrics per run), `
 
 - **Documentation:** [5_results_data/README.md](5_results_data/README.md).
 
-### `5_results_analysis/` — Analysis scripts and outputs (Section 5)
+### `5_results_analysis/` — Analysis notebooks and outputs (Section 5)
 
-**Paper section:** Section 5 (Results and Analysis — scripts and figures).
+**Paper section:** Section 5 (Results and Analysis — figures and tables).
 
-Contains the scripts that produce the paper’s figures and tables from `5_results_data/run_table.csv`. Outputs are written to `5_results_analysis/figures/` and `5_results_analysis/tables/`.
+Contains Jupyter notebooks that produce the paper’s figures and tables from `5_results_data/run_table.csv`. Outputs are written to `5_results_analysis/figures/` and `5_results_analysis/tables/`.
 
 - **Documentation:** [5_results_analysis/README.md](5_results_analysis/README.md).
 
@@ -72,21 +72,16 @@ Contains the scripts that produce the paper’s figures and tables from `5_resul
 
 ## Replicating the data analysis (Section 5 only)
 
-To reproduce the paper’s tables and figures from the provided data **without** re-running the experiment:
+To reproduce the paper’s tables and figures from the provided data **without** re-running the experiment, run the Jupyter notebooks in **`5_results_analysis/`** (Boxplots, Descriptive_Statistics, Structural_Groups_Analysis). Input: `5_results_data/run_table.csv`. Outputs: `5_results_analysis/figures/`, `5_results_analysis/tables/`.
 
-```bash
-pip install -r 5_results_analysis/requirements.txt
-python3 5_results_analysis/make_results.py
-```
-
-Input: `5_results_data/run_table.csv`. Outputs: `5_results_analysis/figures/`, `5_results_analysis/tables/`. See [5_results_analysis/README.md](5_results_analysis/README.md).
+See [5_results_analysis/README.md](5_results_analysis/README.md) for how to activate the virtualenv and start Jupyter.
 
 ---
 
 ## Running the entire replication (Sections 4 and 5)
 
 1. **Section 4 — Experiment execution:** Follow [4_experiment_execution/HOW_TO_RUN_THE_EXPERIMENT.md](4_experiment_execution/HOW_TO_RUN_THE_EXPERIMENT.md) to install prerequisites, set up the server, start tunnels, and run the Experiment Runner. Results are produced under the runner’s output path; the package’s **`5_results_data/`** is a snapshot of that output.
-2. **Section 5 — Analysis:** Use the run table (from step 1 or the provided `5_results_data/run_table.csv`) and run the analysis as above.
+2. **Section 5 — Analysis:** Use the run table (from step 1 or the provided `5_results_data/run_table.csv`) and run the analysis notebooks as described in [5_results_analysis/README.md](5_results_analysis/README.md).
 
 ---
 

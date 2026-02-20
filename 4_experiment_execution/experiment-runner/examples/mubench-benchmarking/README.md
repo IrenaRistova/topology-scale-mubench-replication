@@ -125,7 +125,7 @@ The **data from the run** of this experiment, and the meaning of each column, ar
 |----------------|----------|----------------|
 | **Experiment definition** (this RunnerConfig) | `4_experiment_execution/experiment-runner/examples/mubench-benchmarking/` | Section 4 |
 | **Data from when the experiment was run**    | **`5_results_data/`** (run table + `raw_runs/`) at package root | Section 5 |
-| **Scripts and figures used in the paper**    | **`5_results_analysis/`** at package root | Section 5 |
+| **Notebooks and figures used in the paper**  | **`5_results_analysis/`** at package root | Section 5 |
 
 So: *this* README describes *how* the experiment was executed and what RunnerConfig does; *what* was observed is in **`5_results_data/`**, and *how* it was turned into tables/figures is in **`5_results_analysis/`**.
 

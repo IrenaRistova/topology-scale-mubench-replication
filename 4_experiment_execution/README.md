@@ -25,9 +25,9 @@ The **data** and **analysis** for the paper are **not** under this folder. They 
 | Role | Path (from replication package root) |
 |------|--------------------------------------|
 | **Data from the run** (run table + per-run folders) | **`5_results_data/`** — `run_table.csv`, `raw_runs/`, `RUN_TABLE_COLUMNS_EXPLANATION.md`. See [5_results_data/README.md](../5_results_data/README.md). |
-| **Analysis** (scripts and outputs for the paper) | **`5_results_analysis/`** — `make_results.py`, figures, tables. Uses `5_results_data/run_table.csv`. See [5_results_analysis/README.md](../5_results_analysis/README.md). |
+| **Analysis** (notebooks and outputs for the paper) | **`5_results_analysis/`** — Jupyter notebooks, figures, tables. Uses `5_results_data/run_table.csv`. See [5_results_analysis/README.md](../5_results_analysis/README.md). |
 
-So: **4_experiment_execution** = how to run the experiment (Section 4); **`5_results_data/`** = what was observed; **`5_results_analysis/`** = how it was turned into the paper’s tables and figures (Section 5).
+So: **4_experiment_execution** = how to run the experiment (Section 4); **`5_results_data/`** = what was observed; **`5_results_analysis/`** = Jupyter notebooks that produce the paper’s tables and figures (Section 5).
 
 ---
 
@@ -57,7 +57,7 @@ A full list of **what to install** (Locust, EnergiBridge, Python deps, server st
 
    Results are written under `experiment-runner/examples/mubench-benchmarking/experiments/mubench_phase3_benchmarking/` (run table + per-run directories). The replication package’s **`5_results_data/`** is a snapshot of that output from when the experiment was run for the paper.
 
-5. **Reproduce only tables/figures** (no re-run): use **`5_results_analysis/`** with **`5_results_data/run_table.csv`** — see [5_results_analysis/README.md](../5_results_analysis/README.md).
+5. **Reproduce only tables/figures** (no re-run): run the Jupyter notebooks in **`5_results_analysis/`** using **`5_results_data/run_table.csv`** — see [5_results_analysis/README.md](../5_results_analysis/README.md).
 
 ---
 
