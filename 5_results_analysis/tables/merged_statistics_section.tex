@@ -1,0 +1,119 @@
+% Statistical analysis section for paper. Use \small and compact column spacing.
+\small
+\setlength{\tabcolsep}{4pt}
+
+% Normality (documentation)
+Normality was assessed with Shapiro--Wilk tests per metric and topology. The majority of groups showed $p < 0.05$, indicating violation of normality assumptions; therefore non-parametric tests (Kruskal--Wallis, Mann--Whitney $U$, Spearman) are used throughout.
+
+% RQ1 & structural groups
+\begin{table}[htbp]
+\centering
+\caption{Structural group contrasts: corrected $p$-values (Holm) for Mann--Whitney $U$ tests. Bold: $p < 0.05$. ``ns'' = not significant or Kruskal--Wallis $p \geq 0.05$.}
+\label{tab:structural_groups}
+\begin{tabular}{lcccc}
+\toprule
+Metric & Dense vs Others & Centralized vs Structured & Seq vs Par & Probabilistic vs Deterministic \\
+\midrule
+Throughput (RPS) & \textbf{8.35e-11} & ns & ns & ns \\
+Avg. response time (ms) & \textbf{9.03e-11} & ns & ns & ns \\
+Energy (J) & ns & \textbf{0.024} & ns & \textbf{0.003} \\
+CPU utilization & \textbf{1.10e-05} & ns & ns & \textbf{5.90e-05} \\
+Failure rate & \textbf{1.49e-13} & \textbf{1.34e-09} & \textbf{0.019} & \textbf{0.014} \\
+P95 latency (ms) & \textbf{2.59e-12} & ns & ns & ns \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% RQ1 Energy
+\begin{table}[htbp]
+\centering
+\caption{RQ1: Energy across topologies. Top: Kruskal--Wallis. Bottom: Structural contrasts (Holm). Bold: $p<0.05$.}
+\label{tab:energy_tests}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcc}
+\toprule
+Metric & H & $p$-value \\
+\midrule
+Energy & 19.58 & 0.001 & \textbf{*} \\
+Energy Per Request & 39.12 & 0.000 & \textbf{*} \\
+Energy Per Success & 39.00 & 0.000 & \textbf{*} \\
+\bottomrule
+\end{tabular}
+
+\begin{tabular}{lcccc}
+\toprule
+Metric & Dense vs Others & Cent. vs Struct. & Seq vs Par & Prob vs Det \\
+\midrule
+Energy & 0.236 & \textbf{0.024} & 0.569 & \textbf{0.003} \\
+Energy Per Request & \textbf{6.35e-05} & 0.211 & 0.540 & \textbf{9.14e-05} \\
+Energy Per Success & \textbf{8.11e-05} & 0.580 & 0.492 & \textbf{5.26e-05} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% Size interaction
+\begin{table}[htbp]
+\centering
+\caption{Topology $\times$ Size: Kruskal--Wallis $p$-values. Interaction = min $p$ (topology effect) across sizes. Bold: $p<0.05$.}
+\label{tab:size_interaction}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccc}
+\toprule
+Metric & Topology & Size & Interaction \\
+\midrule
+Energy (J) & \textbf{0.001} & \textbf{4.27e-28} & \textbf{8.94e-11} \\
+Throughput (RPS) & \textbf{3.98e-10} & \textbf{1.01e-15} & \textbf{1.01e-10} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% RQ2 Performance--energy correlation
+\begin{table}[htbp]
+\centering
+\caption{RQ2: Spearman correlation (performance vs energy) per topology. Bold: $p<0.05$.}
+\label{tab:performance_energy_correlation}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccc}
+\toprule
+Topology & Throughput--Energy & Latency--Energy & Failure--Energy \\
+\midrule
+Probabilistic Tree & \textbf{-0.38 (0.038)} & \textbf{0.39 (0.035)} & 0.34 (0.066) \\
+Parallel Fanout & \textbf{-0.38 (0.037)} & \textbf{0.38 (0.039)} & \textbf{0.43 (0.019)} \\
+Chain With Branching & \textbf{-0.84 (6.78e-09)} & \textbf{0.84 (7.55e-09)} & \textbf{0.88 (9.64e-11)} \\
+Complex Mesh & \textbf{0.96 (1.46e-16)} & \textbf{-0.96 (7.07e-17)} & \textbf{-0.72 (6.57e-06)} \\
+Hierarchical Tree & \textbf{-0.84 (4.37e-09)} & \textbf{0.83 (1.27e-08)} & \textbf{0.80 (1.28e-07)} \\
+Sequential Fanout & \textbf{-0.86 (1.36e-09)} & \textbf{0.85 (2.11e-09)} & \textbf{-0.64 (1.43e-04)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% Efficiency (energy per RPS)
+\begin{table}[htbp]
+\centering
+\caption{Energy efficiency (energy per RPS): Kruskal--Wallis and structural contrasts. Bold: $p<0.05$.}
+\label{tab:efficiency}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcc}
+\toprule
+Metric & H & $p$-value \\
+\midrule
+Energy per RPS & 39.27 & 0.000 & \textbf{*} \\
+\bottomrule
+\end{tabular}
+
+\begin{tabular}{lcccc}
+\toprule
+Metric & Dense vs Others & Cent. vs Struct. & Seq vs Par & Prob vs Det \\
+\midrule
+Energy per RPS & \textbf{6.46e-05} & 0.213 & 0.530 & \textbf{8.08e-05} \\
+\bottomrule
+\end{tabular}
+\end{table}
