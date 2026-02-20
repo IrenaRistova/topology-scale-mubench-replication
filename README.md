@@ -13,13 +13,13 @@ This repository supports replication of the study on topology and scale effects 
 If this replication package is helping your research, consider citing it as follows:
 
 ```
-@misc{ReplicationPackage2026,
-  title     = {{Replication Package for ``Topology and Scale Effects on Performance and Energy in $\mu$Bench Microservices''}},
-  author    = {Ristova, Irena},
-  year      = {2026},
-  publisher = {GitHub},
-  url       = {https://github.com/IrenaRistova/topology-scale-mubench-replication},
-  note      = {Accessed: 2026-01-26}
+@misc{ReplicationPackage,
+    title = {{Replication Package}},
+    author = {{Anonymous}},
+    year = {2026},
+    publisher = {GitHub},
+    url = {https://anonymous.4open.science/r/topology-scale-mubench-replication-DF65/README.md},
+    note = {Accessed: 2026-02-20}
 }
 ```
 
